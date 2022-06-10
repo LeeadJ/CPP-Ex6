@@ -10,10 +10,10 @@ class League{
     private:
         std::vector<Team*> _teams;
         std::vector<std::string> _DefaultTeams = {
-           "Cowboys", "Eagles", "Commanders", "Giants","Packers", "Vikings", "Bears", "Lions",
-           "Buccaneeres", "Saints", "Falcons", "Panthers",
-           "Rams", "Cardinals", "49ers", "Seahawks",
-            "Biils", "Patriots", "Dolphins", "Jets"};
+           "Celtics", "76ers", "Raptors", "Nets", "Knicks",
+           "Bucks", "Bulls", "Cavaliers", "Pacers", "Pistons",
+           "Heat", "Hawks", "Hornets", "Wizards", "Magic",
+           "Jazz", "Nuggets", "Suns", "Lakers", "Clippers"};
     
     public:
         //Getters:

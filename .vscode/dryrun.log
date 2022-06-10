@@ -1,4 +1,4 @@
-make --dry-run --always-make --keep-going --print-directory
+make --dry-run --keep-going --print-directory
 make: Entering directory '/mnt/c/Users/Leead/Desktop/CPP-Projects/CPP-Ex6'
 clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/Team.cpp -o objects/Team.o
 clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/Game.cpp -o objects/Game.o
