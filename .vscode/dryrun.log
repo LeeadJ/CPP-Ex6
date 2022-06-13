@@ -1,7 +1,10 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/mnt/c/Users/Leead/Desktop/CPP-Projects/CPP-Ex6'
-clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/Team.cpp -o objects/Team.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/League.cpp -o objects/League.o
 clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/Game.cpp -o objects/Game.o
-clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources objects/Team.o objects/Game.o -o test
+clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/Team.cpp -o objects/Team.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/Main.cpp -o objects/Main.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/Schedual.cpp -o objects/Schedual.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources objects/League.o objects/Game.o objects/Team.o objects/Main.o objects/Schedual.o -o test
 make: Leaving directory '/mnt/c/Users/Leead/Desktop/CPP-Projects/CPP-Ex6'
  

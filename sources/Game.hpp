@@ -2,20 +2,16 @@
 #include <iostream>
 #include "Team.hpp"
 
+
 class Game{
     private:
     Team* _homeTeam;
     Team* _awayTeam;
-    Team* _winner;
-    Team* _loser;
 
     public:
         //Getters
-       Team* getHomeTeam() const;
-       Team* getAwayTeam() const;
-    //    int* getScore() const;
-       Team* getWinner() const;
-       Team* getLoser() const;
+       Team* getHomeTeam();
+       Team* getAwayTeam();
 
        //Setters:
        void setWinner(Team& winner);
@@ -26,5 +22,11 @@ class Game{
 
         //Operator:
         friend std::ostream& operator << (std::ostream& out, const Game& game);
-       
+
+        //Functions:
+        void updateTeamPoints();
+        void updateHomeTeam(int num);
+        void updateAwayTeam(int num);
+        void updateGam_WinnerLoser();
+        // void startGame();
 };
