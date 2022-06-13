@@ -1,15 +1,20 @@
 #include "Team.hpp"
+#include <cstdlib>
 
+//Setters:
+void Team::setTalentLevel(double lev){
+    if(lev > 1.0 || lev < 0){
+        throw std::runtime_error("Team Error: Talent Level must be a double between 0 and 1.");
+    }
+    this->_talent_level=lev;
+    }
 //Constructors
 Team::Team(std::string n) : _name(n){
     this->initTalentLevel();
 }
 
-Team::Team(std::string n, double lev) : _name(n), _talent_level(lev){
-    if(lev > 1.0 || lev < 0){
-        throw std::runtime_error("Team Error: Talent Level must be a double between 0 and 1.");
-    }
-    this
+Team::Team(std::string n, double lev) : _name(n){
+    this->setTalentLevel(lev);
 }
 
 //Operators:
@@ -20,6 +25,7 @@ std::ostream& operator << (std::ostream& out, const Team& team){
 
 //Functions:
 void Team::initTalentLevel(){
+    srand(time(0));
     double talent =((double)rand()/(double)RAND_MAX);
     this->_talent_level=talent;
 }

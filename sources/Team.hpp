@@ -40,6 +40,8 @@ class Team{
         void setTalentLevel(double lev){this->_talent_level=lev;}
         void setWins(int num) {this->_wins=num;}
         void setLoss(int num) {this->_losses=num;}
+        void setPosPoints(int num){this->_pos_points=num;}
+        void setNegPoints(int num){this->_neg_points=num;}
         
         
 
