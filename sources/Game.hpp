@@ -10,12 +10,12 @@ class Game{
 
     public:
         //Getters
-       Team* getHomeTeam();
-       Team* getAwayTeam();
+       Team* getHomeTeam() const;
+       Team* getAwayTeam() const;
 
        //Setters:
-       void setWinner(Team& winner);
-       void setLoser(Team& loser);
+       void setWinner(Team& winner) {winner.win();}
+       void setLoser(Team& loser){loser.loss();}
 
         //Constructor:
        Game(Team& homeTeam, Team& awayTeam);

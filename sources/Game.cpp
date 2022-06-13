@@ -2,14 +2,14 @@
 #include <random>
 
 //Getters
-Team* Game::getHomeTeam() {return this->_homeTeam;}
-Team* Game::getAwayTeam() {return this->_awayTeam;}
+Team* Game::getHomeTeam() const {return this->_homeTeam;}
+Team* Game::getAwayTeam() const {return this->_awayTeam;}
 
 //Setters:
 Game::Game(Team& home, Team& away) : _homeTeam(&home), _awayTeam(&away){}
 
 //Operators:
-std::ostream& operator << (std::ostream& out, Game& game){
+std::ostream& operator << (std::ostream& out, const Game& game){
     out << "Game:\n" << "Home " << *game.getHomeTeam();
     out << "\nAway " << *game.getAwayTeam();
     return out;
