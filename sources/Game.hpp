@@ -28,5 +28,5 @@ class Game{
         void updateHomeTeam(int num);
         void updateAwayTeam(int num);
         void updateGam_WinnerLoser();
-        // void startGame();
+        void startGame();
 };

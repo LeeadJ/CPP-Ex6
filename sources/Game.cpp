@@ -59,8 +59,9 @@ void Game::updateGam_WinnerLoser(){
     this->getAwayTeam()->setPointsScored(0);
 }
 
-// void Game::startGame(){
-//     this->updateTeamPoints();
-//     this->up
-// }
+void Game::startGame(){
+    std::cout<<"Here"<<std::endl;
+    this->updateTeamPoints();
+    this->updateGam_WinnerLoser();
+}
        
