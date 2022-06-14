@@ -3,7 +3,6 @@
 #include "sources/Team.hpp"
 #include "sources/League.hpp"
 #include "sources/Schedule.hpp"
-#include ""
 using namespace std;
 
 TEST_CASE("Default"){
