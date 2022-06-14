@@ -5,8 +5,8 @@
 #include "sources/Schedule.hpp"
 using namespace std;
 
-TEST_CASE("Default"){
-    Team::Team a{"sixers", 0.1121};
+TEST_CASE("Default Tests"){
+    Team a{"sixers", 0.1121};
     Team b{"knicks", 0.4};
     CHECK(a.getName()=="sixers")
     CHECK(b.getName()=="knicks")
