@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jun 13 17:00:35 2022
+# Make data base, printed on Wed Jun 15 12:30:15 2022
 
 # Variables
 
@@ -17,7 +17,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # makefile (from 'Makefile', line 11)
 VALGRIND_FLAGS = -v --leak-check=full --show-leak-kinds=all  --error-exitcode=99
 # environment
-WSLENV = VSCODE_WSL_EXT_LOCATION/up
+WSLENV = VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up
 # default
 .SHELLFLAGS := -c
 # environment
@@ -51,11 +51,13 @@ VSCODE_CWD = /mnt/c/Users/Leead/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/leeadj/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Intel/iCLS Client/:/mnt/c/Program Files/Intel/iCLS Client/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Java/jdk-17.0.1/bin:/mnt/c/MinGW/mingw32/bin:/mnt/c/msys64/mingw64/bin:/mnt/c/Users/Leead/New folder:/mnt/c/Users/Leead/New folder/Library/mingw-w64/bin:/mnt/c/Users/Leead/New folder/Library/usr/bin:/mnt/c/Users/Leead/New folder/Library/bin:/mnt/c/Users/Leead/New folder/Scripts:/mnt/c/Users/Leead/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Leead/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Leead/AppData/Local/Programs/Fiddler:/mnt/c/Users/Leead/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0/LocalCache/local-packages/Python39/Scripts
+PATH = /home/leeadj/.vscode-server/bin/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Intel/iCLS Client/:/mnt/c/Program Files/Intel/iCLS Client/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Java/jdk-17.0.1/bin:/mnt/c/MinGW/mingw32/bin:/mnt/c/msys64/mingw64/bin:/mnt/c/Users/Leead/New folder:/mnt/c/Users/Leead/New folder/Library/mingw-w64/bin:/mnt/c/Users/Leead/New folder/Library/usr/bin:/mnt/c/Users/Leead/New folder/Library/bin:/mnt/c/Users/Leead/New folder/Scripts:/mnt/c/Users/Leead/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Leead/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Leead/AppData/Local/Programs/Fiddler:/mnt/c/Users/Leead/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0/LocalCache/local-packages/Python39/Scripts
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-85de7176-3fc2-4d6b-9234-36143be6076d.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-50fcd9a9-6cd5-434a-a57f-d77e39d366f2.sock
+# environment
+VSCODE_SERVER_TAR = /mnt/c/Users/Leead/AppData/Local/Temp/vscode-remote-wsl/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/vscode-server-stable-linux-x64.tar.gz
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # automatic
@@ -75,7 +77,7 @@ HOME = /home/leeadj
 # environment
 LOGNAME = leeadj
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # makefile (from 'Makefile', line 14)
 HEADERS = $(wildcard $(SOURCE_PATH)/*.hpp)
 # environment
@@ -155,7 +157,7 @@ WSL_DISTRO_NAME = Ubuntu-20.04
 # makefile (from 'Makefile', line 10)
 TIDY_FLAGS = -extra-arg=-std=$(CXXVERSION) -checks=bugprone-*,clang-analyzer-*,cppcoreguidelines-*,performance-*,portability-*,readability-*,-cppcoreguidelines-pro-bounds-pointer-arithmetic,-cppcoreguidelines-owning-memory --warnings-as-errors=*
 # variable set hash-table stats:
-# Load=72/1024=7%, Rehash=0, Collisions=4/106=4%
+# Load=73/1024=7%, Rehash=0, Collisions=4/107=4%
 
 # Pattern-specific Variable Values
 
@@ -170,23 +172,17 @@ TIDY_FLAGS = -extra-arg=-std=$(CXXVERSION) -checks=bugprone-*,clang-analyzer-*,c
 
 # Implicit Rules
 
-%.o: %.cpp sources/Game.hpp sources/Team.hpp sources/Schedual.hpp sources/League.hpp
+%.o: %.cpp sources/Game.hpp sources/Team.hpp sources/Schedule.hpp sources/League.hpp
 #  recipe to execute (from 'Makefile', line 23):
 	$(CXX) $(CXXFLAGS) --compile $< -o $@
 
-objects/%.o: sources/%.cpp sources/Game.hpp sources/Team.hpp sources/Schedual.hpp sources/League.hpp
+objects/%.o: sources/%.cpp sources/Game.hpp sources/Team.hpp sources/Schedule.hpp sources/League.hpp
 #  recipe to execute (from 'Makefile', line 26):
 	$(CXX) $(CXXFLAGS) --compile $< -o $@
 
 # 2 implicit rules, 0 (0.0%) terminal.
 
 # Files
-
-# Not a target:
-objects/Schedual.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
 
 # Not a target:
 all:
@@ -196,13 +192,19 @@ all:
 #  File has not been updated.
 
 # Not a target:
+objects/Schedule.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 Makefile:
 #  Implicit rule search has been done.
 #  Last modified 2022-05-24 17:35:28
 #  File has been updated.
 #  Successfully updated.
 
-test: objects/League.o objects/Game.o objects/Team.o objects/Main.o objects/Schedual.o
+test: objects/League.o objects/Game.o objects/Team.o objects/Main.o objects/Schedule.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -280,7 +282,7 @@ valgrind: test
 # strcache performance: lookups = 59 / hit rate = 30%
 # hash-table stats:
 # Load=41/8192=1%, Rehash=0, Collisions=2/59=3%
-# Finished Make data base on Mon Jun 13 17:00:35 2022
+# Finished Make data base on Wed Jun 15 12:30:15 2022
 
  
 make: *** No rule to make target 'all'.  Stop.
